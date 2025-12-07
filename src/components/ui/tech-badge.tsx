@@ -6,9 +6,10 @@ import {
   SiPerl, SiLua, SiHaskell, SiElixir, SiErlang, SiKotlin, SiFortran, SiJulia,
   SiGithub, SiGnubash, SiVuedotjs, SiClojure, SiOctave, SiAdafruit, SiDelphi,
   SiDjango, SiRubyonrails, SiFlask, SiFastapi, SiRubysinatra, SiLighthouse,
-  SiQiskit, SiNumpy, SiPandas, SiTidyverse, SiLaravel
+  SiQiskit, SiNumpy, SiPandas, SiTidyverse, SiLaravel, SiTailwindcss,
+  SiDaisyui
 } from "react-icons/si";
-import { FaJava, FaMicrochip, FaCode, FaDatabase, FaBrain, FaRProject, FaLanguage } from "react-icons/fa";
+import { FaJava, FaMicrochip, FaCode, FaBrain, FaRProject, FaLanguage } from "react-icons/fa";
 import { DiProlog } from "react-icons/di";
 import { GiProcessor } from "react-icons/gi";
 import { GrMicrofocus, GrVirtualMachine } from "react-icons/gr";
@@ -65,6 +66,8 @@ const techIcons: Record<string, { icon: React.ElementType; color: string }> = {
   "Flask": { icon: SiFlask, color: "#000000" },
   "FastAPI": { icon: SiFastapi, color: "#009688" },
   "Sinatra": { icon: SiRubysinatra, color: "#cdc6b9" },
+  "TailwindCSS": { icon: SiTailwindcss, color: "#38B2AC" },
+  "DaisyUI": { icon: SiDaisyui, color: "#22C55E" },
 
   // Databases
   "MongoDB": { icon: SiMongodb, color: "#47A248" },

@@ -11,7 +11,7 @@ interface Project {
   techs: string[];
   github?: string;
   gitlab?: string;
-  category: string;
+  category: string[];
 }
 
 const projects: Project[] = [
@@ -20,115 +20,164 @@ const projects: Project[] = [
     description: "CLI-based operating system kernel with memory management and system calls, built from scratch.",
     techs: ["C", "Assembly"],
     github: "https://github.com/harishtpj/MKS",
-    category: "Systems",
+    category: ["Systems"],
   },
   {
     title: "thinFTP - FTP Server",
     description: "Fully functional FTP server with multi-client support and security features.",
     techs: ["Python"],
     github: "https://github.com/harishtpj/thinftp",
-    category: "Networking",
+    category: ["Networking"],
   },
   {
     title: "AutoREST - API Automator",
     description: "Automation tool for REST API testing and management with comprehensive workflow capabilities.",
     techs: ["Ruby"],
     github: "https://github.com/harishtpj/AutoREST",
-    category: "Tools",
+    category: ["Networking", "Tools"],
   },
   {
     title: "MiME - Mail Server System",
     description: "Complete SMTP mail server with message routing and authentication capabilities.",
     techs: ["C"],
     github: "https://github.com/harishtpj/MiME",
-    category: "Networking",
-  },
-  {
-    title: "HPI",
-    description: "A simple, dynamically-typed, procedural psuedocode interpreter.",
-    techs: ["C++"],
-    github: "https://github.com/harishtpj/HPI",
-    category: "Compilers",
-  },
-  {
-    title: "Silk Language",
-    description: "An Interpreted, Dynamically-typed, Object Oriented language with simple and modern syntax.",
-    techs: ["C++"],
-    github: "https://github.com/harishtpj/SilkLang",
-    category: "Compilers",
-  },
-  {
-    title: "Calci",
-    description: "A Modern, Fast compiled language with pascal-like syntax.",
-    techs: ["Python", "C"],
-    github: "https://github.com/harishtpj/Calci",
-    category: "Compilers",
-  },
-  {
-    title: "Mathsel",
-    description: "A Math Statement Based Language which compiles its code to C Language.",
-    techs: ["Java", "C"],
-    github: "https://github.com/harishtpj/Mathsel",
-    category: "Compilers",
-  },
-  {
-    title: "Fidis",
-    description: "A File-based Data store with a similar interface to Redis.",
-    techs: ["Ruby"],
-    github: "https://github.com/harishtpj/Fidis",
-    category: "Tools",
-  },
-  {
-    title: "AI Assistant for Disabled People",
-    description: "AI-powered assistant using Micro:bit that recognizes individuals and reads image descriptions for visually impaired users.",
-    techs: ["Python", "AI/ML", "Microbit"],
-    category: "AI/ML",
-  },
-  {
-    title: "Voice-Based Excel Data Assistant",
-    description: "Python application that answers questions based on Excel data using NLP and speech synthesis.",
-    techs: ["Python", "AI/ML", "NLP"],
-    github: "https://github.com/harishtpj/Family-AI",
-    category: "AI/ML",
-  },
-  {
-    title: "Risonanza",
-    description: "An automated, reliable stress and emotion detection from voice audio, enabling real-time analysis with privacy, efficiency, and flexibility.",
-    techs: ["Python", "AI/ML"],
-    github: "https://github.com/harishtpj/Risonanza",
-    category: "AI/ML",
+    category: ["Networking"],
   },
   {
     title: "GoDNS - DNS Server",
     description: "Custom DNS server with domain name resolution and multiple record type support.",
     techs: ["Go"],
     github: "https://github.com/harishtpj/GoDNS",
-    category: "Networking",
+    category: ["Networking"],
+  },
+  {
+    title: "AI Assistant for Disabled People",
+    description: "AI-powered assistant using Micro:bit that recognizes individuals and reads image descriptions for visually impaired users.",
+    techs: ["Python", "AI/ML", "Microbit"],
+    category: ["AI/ML"],
+  },
+  {
+    title: "Voice-Based Excel Data Assistant",
+    description: "Python application that answers questions based on Excel data using NLP and speech synthesis.",
+    techs: ["Python", "AI/ML", "NLP"],
+    github: "https://github.com/harishtpj/Family-AI",
+    category: ["AI/ML"],
+  },
+  {
+    title: "Risonanza",
+    description: "An automated, reliable stress and emotion detection from voice audio, enabling real-time analysis with privacy, efficiency, and flexibility.",
+    techs: ["Python", "AI/ML"],
+    github: "https://github.com/harishtpj/Risonanza",
+    category: ["AI/ML"],
+  },
+  {
+    title: "HPI",
+    description: "A simple, dynamically-typed, procedural psuedocode interpreter.",
+    techs: ["C++"],
+    github: "https://github.com/harishtpj/HPI",
+    category: ["Compilers"],
+  },
+  {
+    title: "Silk Language",
+    description: "An Interpreted, Dynamically-typed, Object Oriented language with simple and modern syntax.",
+    techs: ["C++"],
+    github: "https://github.com/harishtpj/SilkLang",
+    category: ["Compilers"],
+  },
+  {
+    title: "RAM-VM",
+    description: "A RISC based processor virtual machine based on LC-3 computer architecture.",
+    techs: ["C", "C++", "Python"],
+    github: "https://github.com/harishtpj/RAM-VM-v2.0",
+    category: ["Systems"],
+  },
+  {
+    title: "Chip8 Emulator",
+    description: "A simple Chip8 emulator built using Python and Pygame.",
+    techs: ["Python"],
+    github: "https://github.com/harishtpj/Chip8-CPU",
+    category: ["Systems"],
+  },
+  {
+    title: "Fidis",
+    description: "A File-based Data store with a similar interface to Redis.",
+    techs: ["Ruby"],
+    github: "https://github.com/harishtpj/Fidis",
+    category: ["Tools"],
   },
   {
     title: "Project Milk - ERP System",
     description: "Comprehensive ERP system for dairy management with inventory, sales, and customer relations.",
     techs: ["Oracle"],
     github: "https://github.com/harishtpj/Project-Milk",
-    category: "Enterprise",
+    category: ["Enterprise"],
   },
   {
     title: "Cafeteria Management System",
     description: "Interactive cafeteria management system with menu, orders, and billing functionality.",
-    techs: ["Python"],
+    techs: ["Python", "MySQL"],
     github: "https://github.com/harishtpj/Cafeteria-Management-System",
-    category: "Applications",
+    category: ["Enterprise", "Applications"],
+  },
+  {
+    title: "Shortly - URL Shortener",
+    description: "A web application that shortens long URLs for easier sharing and tracking.",
+    techs: ["Ruby", "PostgreSQL", "Rails", "TailwindCSS"],
+    github: "https://github.com/harishtpj/shortly",
+    category: ["Web Development", "Applications"],
+  },
+  {
+    title: "Devfolio",
+    description: "My personal portfolio website showcasing projects and skills.",
+    techs: ["React", "TypeScript", "TailwindCSS"],
+    github: "https://github.com/harishtpj/devfolio",
+    category: ["Web Development"],
+  },
+  {
+    title: "TaskMaster - Task Management App",
+    description: "A web application to manage and track tasks efficiently.",
+    techs: ["Vue", "TypeScript", "DaisyUI"],
+    gitlab: "https://gitlab.com/harishtpj/taskmaster",
+    category: ["Web Development"],
+  },
+  {
+    title: "Memoria - Simple Virtual Machine",
+    description: "A simple virtual machine implementing SUBLEQ (URISC).",
+    techs: ["Ada"],
+    github: "https://github.com/harishtpj/Memoria",
+    category: ["Systems"],
+  },
+  {
+    title: "Calci",
+    description: "A Modern, Fast compiled language with pascal-like syntax.",
+    techs: ["Python", "C"],
+    github: "https://github.com/harishtpj/Calci",
+    category: ["Compilers"],
+  },
+  {
+    title: "MAthX - Max of Maths",
+    description: "A Math Statement Based Language which compiles its code to C Language. Version 2 of Mathsel.",
+    techs: ["Python", "C"],
+    github: "https://github.com/harishtpj/MathX",
+    category: ["Compilers"],
+  },
+  {
+    title: "Mathsel",
+    description: "A Math Statement Based Language which compiles its code to C Language.",
+    techs: ["Java", "C"],
+    github: "https://github.com/harishtpj/Mathsel",
+    category: ["Compilers"],
   },
 ];
 
-const categories = ["All", "Systems", "AI/ML", "Networking", "Compilers", "Enterprise", "Tools", "Applications"];
+const categories = ["All", "Systems", "AI/ML", "Networking", "Compilers", "Enterprise", "Tools", "Applications", "Web Development"];
 
 export function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = activeCategory === "All" 
     ? projects 
-    : projects.filter(p => p.category === activeCategory);
+    : projects.filter(p => p.category.includes(activeCategory));
 
   return (
     <section id="projects" className="py-20 px-4">
