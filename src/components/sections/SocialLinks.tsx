@@ -3,7 +3,8 @@ import {
   SiKaggle, 
   SiLeetcode, 
   SiCodeforces, 
-  SiGithub, 
+  SiGithub,
+  SiGitlab,
   SiLinkedin,
   SiHackerrank,
   SiCodechef,
@@ -16,6 +17,13 @@ const socialLinks = [
     url: "https://github.com/harishtpj",
     icon: SiGithub,
     color: "hover:text-[#333] dark:hover:text-white",
+  },
+  {
+    name: "GitLab",
+    username: "@harishtpj",
+    url: "https://gitlab.com/harishtpj",
+    icon: SiGitlab,
+    color: "hover:text-[#FC6D26]",
   },
   {
     name: "LinkedIn",

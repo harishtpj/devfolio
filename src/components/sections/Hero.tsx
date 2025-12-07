@@ -97,7 +97,7 @@ export function Hero() {
                 className="rounded-full px-8 gap-2"
                 asChild
               >
-                <a href="#contact">
+                <a href="https://harishtpj.github.io/about">
                   <FileText className="w-4 h-4" />
                   View my Resume
                 </a>
