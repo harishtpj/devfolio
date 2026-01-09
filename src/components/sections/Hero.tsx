@@ -5,6 +5,7 @@ import { TypingAnimation } from "@/components/ui/typing-animation";
 const roles = [
   "Full-Stack Developer",
   "Systems Programmer",
+  "Database Architect",
   "Compiler Engineer",
   "AI Enthusiast",
 ];

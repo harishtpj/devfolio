@@ -23,6 +23,13 @@ const projects: Project[] = [
     category: ["Systems"],
   },
   {
+    title: "QTVP - Quantum Teleportation VPN Protocol",
+    description: "A theoretical VPN protocol leveraging quantum teleportation principles for secure data transmission.",
+    techs: ["Python", "Qiskit", "FastAPI"],
+    github: "https://github.com/hecker-go-brrr/QTVP",
+    category: ["Networking", "Quantum Computing"],
+  },
+  {
     title: "thinFTP - FTP Server",
     description: "Fully functional FTP server with multi-client support and security features.",
     techs: ["Python"],
@@ -170,7 +177,7 @@ const projects: Project[] = [
   },
 ];
 
-const categories = ["All", "Systems", "AI/ML", "Networking", "Compilers", "Enterprise", "Tools", "Applications", "Web Development"];
+const categories = ["All", "Systems", "AI/ML", "Networking", "Compilers", "Enterprise", "Tools", "Applications", "Web Development", "Quantum Computing"];
 
 export function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");

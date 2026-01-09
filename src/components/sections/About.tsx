@@ -48,8 +48,8 @@ export function About() {
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Currently pursuing <strong className="text-foreground">B.Tech in 
-                Computer Science & Engineering</strong> at VIT Chennai. I'm deeply 
-                interested in <strong className="text-foreground">Quantum Computing</strong>, 
+                Computer Science & Engineering</strong> at VIT Chennai with a CGPA of <strong className="text-foreground">9.1</strong>. 
+                I'm deeply interested in <strong className="text-foreground">Quantum Computing</strong>, 
                 <strong className="text-foreground"> Artificial Intelligence</strong>, and 
                 pushing the boundaries of what's possible with code.
               </p>

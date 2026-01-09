@@ -6,14 +6,14 @@ const education = [
     degree: "B.Tech Computer Science & Engineering",
     institution: "Vellore Institute of Technology, Chennai",
     period: "2025 - Present (First Year)",
-    highlight: "JEE Main: 95.187 percentile",
+    highlight: "CGPA: 9.1/10",
   },
   {
     degree: "CBSE Grade 12",
     institution: "Velammal New-Gen School, Surapet",
     period: "2025",
     highlight: "492/500 • 2 Centums (CS: 100, Chemistry: 100)",
-    details: "Math: 99 | Physics: 98 | English: 95",
+    details: "Math: 99 | Physics: 98 | English: 95 | JEE Mains: 95.187 percentile",
   },
   {
     degree: "CBSE Grade 10",

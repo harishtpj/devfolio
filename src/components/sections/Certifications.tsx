@@ -4,6 +4,11 @@ import { Button } from "@/components/ui/button";
 
 const certifications = [
   {
+    name: "Cisco C++ Essentials",
+    issuer: "Cisco Networking Academy",
+    link: "https://www.credly.com/badges/15423c42-6b27-4fa9-a65f-c178af0a0f4b/"
+  },
+  {
     name: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
     link: "https://www.credly.com/badges/6586f3eb-b199-443c-94b7-1820e46f6522/",
@@ -36,6 +41,11 @@ const certifications = [
 ];
 
 const hackathons = [
+  {
+    name: "DecodeX 2025",
+    desc: "A competitive coding event held as part of TechnoVIT '25. Secured a spot in the Top 10.",
+    link: "https://harishtpj.github.io/docs/Certificate_DecodeX.pdf"
+  },
   {
     name: "Bit-n-Build Hackathon 2025",
     desc: "A Statewide Hackathon conducted by FRCRCE in association with GDG",
