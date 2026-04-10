@@ -41,8 +41,8 @@ const socialLinks = [
   },
   {
     name: "LeetCode",
-    username: "@harishtpj",
-    url: "https://leetcode.com/u/harishtpj",
+    username: "@harishkumar_mv",
+    url: "https://leetcode.com/u/harishkumar_mv",
     icon: SiLeetcode,
     color: "hover:text-[#FFA116]",
   },
