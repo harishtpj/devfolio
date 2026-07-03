@@ -46,7 +46,7 @@ export function Hero() {
             <p className="text-muted-foreground text-lg max-w-xl animate-fade-in-up stagger-1 opacity-0">
               Deep expertise in 20+ programming languages, from low-level systems to 
               modern web development. Passionate about building compilers, operating 
-              systems, and AI-powered applications.
+              systems, database engines and AI-powered applications.
             </p>
 
             <div className="flex items-center justify-center md:justify-start gap-2 text-muted-foreground animate-fade-in-up stagger-2 opacity-0">
@@ -98,7 +98,7 @@ export function Hero() {
                 className="rounded-full px-8 gap-2"
                 asChild
               >
-                <a href="https://github.com/harishtpj/harishtpj/blob/master/HK_Resume.pdf" target="_blank">
+                <a href="https://harishtpj.github.io/docs/HK_Resume.pdf" target="_blank">
                   <FileText className="w-4 h-4" />
                   View my Resume
                 </a>

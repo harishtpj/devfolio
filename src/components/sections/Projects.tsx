@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { TechBadge } from "@/components/ui/tech-badge";
 import { ScrollAnimate } from "@/components/ui/scroll-animate";
 import { cn } from "@/lib/utils";
+import { DynamicIcon } from "../ui/dynamic-icon";
 
 interface Project {
   title: string;
@@ -11,7 +12,9 @@ interface Project {
   techs: string[];
   github?: string;
   gitlab?: string;
+  live?: string;
   category: string[];
+  icon?: string;
 }
 
 const projects: Project[] = [
@@ -21,6 +24,58 @@ const projects: Project[] = [
     techs: ["C", "Assembly"],
     github: "https://github.com/harishtpj/MKS",
     category: ["Systems"],
+    icon: "System"
+  },
+  {
+    title: "IndianSQL - DBMS Engine",
+    description: "A simple, file based DBMS engine with SQL query and network access support, built from scratch.",
+    techs: ["Go"],
+    github: "https://github.com/harishtpj/IndianSQL",
+    category: ["Systems", "Networking", "Compilers"],
+    icon: "DB"
+  },
+  {
+    title: "ResumeCanvas - Portfolio Builder",
+    description: "An AI powered portfolio builder that automatically generates dynamic portfolios from static resumes.",
+    techs: ["PHP", "PostgreSQL", "Laravel", "Vue", "TailwindCSS", "Gemini"],
+    github: "https://github.com/harishtpj/ResumeCanvas",
+    live: "https://resumecanvas-9sjc.onrender.com/",
+    category: ["Web Development", "Applications"],
+    icon: "Web"
+  },
+  {
+    title: "Verifolium - Leaf Doctor",
+    description: "AI-powered web application that diagnoses plant leaf diseases and provides specialized care instructions.",
+    techs: ["Ruby", "PostgreSQL", "Rails", "React", "TailwindCSS", "Tensorflow", "Gemini"],
+    github: "https://github.com/RocxRam/VeriFolium---Leaf-Monitor",
+    live: "https://verifolium-leaf-monitor-production.up.railway.app/",
+    category: ["Web Development", "AI/ML", "Applications"],
+    icon: "Web"
+  },
+  {
+    title: "RawNN - Minimalistic Neural Network Framework",
+    description: "A lightweight neural network framework built from scratch, supporting basic layers and training algorithms.",
+    techs: ["Python", "NumPy", "AI/ML"],
+    github: "https://github.com/harishtpj/RawNN",
+    category: ["AI/ML"],
+    icon: "AI/ML"
+  },
+  {
+    title: "CineMood - Movie Recommendation System",
+    description: "AI-powered movie recommendation system that suggests films based on user mood and preferences.",
+    techs: ["Ruby", "PostgreSQL", "Rails", "React", "TailwindCSS", "AI/ML"],
+    github: "https://github.com/harishtpj/CineMood",
+    live: "https://cinemood-ai.up.railway.app/",
+    category: ["Web Development", "AI/ML", "Applications", "Gemini"],
+    icon: "Web"
+  },
+  {
+    title: "boolR - Boolean Expression Analyzer",
+    description: "A suite of tools for Boolean expression analysis and minimization in R",
+    techs: ["R", "Tidyverse"],
+    github: "https://github.com/harishtpj/boolR",
+    category: ["Tools"],
+    icon: "Tool"
   },
   {
     title: "QTVP - Quantum Teleportation VPN Protocol",
@@ -28,6 +83,7 @@ const projects: Project[] = [
     techs: ["Python", "Qiskit", "FastAPI"],
     github: "https://github.com/hecker-go-brrr/QTVP",
     category: ["Networking", "Quantum Computing"],
+    icon: "Protocol"
   },
   {
     title: "thinFTP - FTP Server",
@@ -35,6 +91,7 @@ const projects: Project[] = [
     techs: ["Python"],
     github: "https://github.com/harishtpj/thinftp",
     category: ["Networking"],
+    icon: "Protocol"
   },
   {
     title: "AutoREST - API Automator",
@@ -42,6 +99,7 @@ const projects: Project[] = [
     techs: ["Ruby"],
     github: "https://github.com/harishtpj/AutoREST",
     category: ["Networking", "Tools"],
+    icon: "Protocol"
   },
   {
     title: "MiME - Mail Server System",
@@ -49,6 +107,7 @@ const projects: Project[] = [
     techs: ["C"],
     github: "https://github.com/harishtpj/MiME",
     category: ["Networking"],
+    icon: "Protocol"
   },
   {
     title: "GoDNS - DNS Server",
@@ -56,12 +115,14 @@ const projects: Project[] = [
     techs: ["Go"],
     github: "https://github.com/harishtpj/GoDNS",
     category: ["Networking"],
+    icon: "Protocol"
   },
   {
     title: "AI Assistant for Disabled People",
     description: "AI-powered assistant using Micro:bit that recognizes individuals and reads image descriptions for visually impaired users.",
     techs: ["Python", "AI/ML", "Microbit"],
     category: ["AI/ML"],
+    icon: "AI/ML"
   },
   {
     title: "Voice-Based Excel Data Assistant",
@@ -69,6 +130,7 @@ const projects: Project[] = [
     techs: ["Python", "AI/ML", "NLP"],
     github: "https://github.com/harishtpj/Family-AI",
     category: ["AI/ML"],
+    icon: "AI/ML"
   },
   {
     title: "Risonanza",
@@ -76,6 +138,7 @@ const projects: Project[] = [
     techs: ["Python", "AI/ML"],
     github: "https://github.com/harishtpj/Risonanza",
     category: ["AI/ML"],
+    icon: "AI/ML"
   },
   {
     title: "HPI",
@@ -83,6 +146,7 @@ const projects: Project[] = [
     techs: ["C++"],
     github: "https://github.com/harishtpj/HPI",
     category: ["Compilers"],
+    icon: "Compiler"
   },
   {
     title: "Silk Language",
@@ -90,6 +154,7 @@ const projects: Project[] = [
     techs: ["C++"],
     github: "https://github.com/harishtpj/SilkLang",
     category: ["Compilers"],
+    icon: "Compiler"
   },
   {
     title: "RAM-VM",
@@ -97,6 +162,7 @@ const projects: Project[] = [
     techs: ["C", "C++", "Python"],
     github: "https://github.com/harishtpj/RAM-VM-v2.0",
     category: ["Systems"],
+    icon: "System"
   },
   {
     title: "Chip8 Emulator",
@@ -104,6 +170,7 @@ const projects: Project[] = [
     techs: ["Python"],
     github: "https://github.com/harishtpj/Chip8-CPU",
     category: ["Systems"],
+    icon: "System"
   },
   {
     title: "Fidis",
@@ -111,6 +178,7 @@ const projects: Project[] = [
     techs: ["Ruby"],
     github: "https://github.com/harishtpj/Fidis",
     category: ["Tools"],
+    icon: "Tool"
   },
   {
     title: "Project Milk - ERP System",
@@ -132,6 +200,7 @@ const projects: Project[] = [
     techs: ["Ruby", "PostgreSQL", "Rails", "TailwindCSS"],
     github: "https://github.com/harishtpj/shortly",
     category: ["Web Development", "Applications"],
+    icon: "Web"
   },
   {
     title: "Devfolio",
@@ -139,6 +208,7 @@ const projects: Project[] = [
     techs: ["React", "TypeScript", "TailwindCSS"],
     github: "https://github.com/harishtpj/devfolio",
     category: ["Web Development"],
+    icon: "Web"
   },
   {
     title: "TaskMaster - Task Management App",
@@ -146,6 +216,7 @@ const projects: Project[] = [
     techs: ["Vue", "TypeScript", "DaisyUI"],
     gitlab: "https://gitlab.com/harishtpj/taskmaster",
     category: ["Web Development"],
+    icon: "Web"
   },
   {
     title: "Memoria - Simple Virtual Machine",
@@ -153,6 +224,7 @@ const projects: Project[] = [
     techs: ["Ada"],
     github: "https://github.com/harishtpj/Memoria",
     category: ["Systems"],
+    icon: "System"
   },
   {
     title: "Calci",
@@ -160,6 +232,7 @@ const projects: Project[] = [
     techs: ["Python", "C"],
     github: "https://github.com/harishtpj/Calci",
     category: ["Compilers"],
+    icon: "Compiler"
   },
   {
     title: "MAthX - Max of Maths",
@@ -167,6 +240,7 @@ const projects: Project[] = [
     techs: ["Python", "C"],
     github: "https://github.com/harishtpj/MathX",
     category: ["Compilers"],
+    icon: "Compiler"
   },
   {
     title: "Mathsel",
@@ -174,7 +248,17 @@ const projects: Project[] = [
     techs: ["Java", "C"],
     github: "https://github.com/harishtpj/Mathsel",
     category: ["Compilers"],
+    icon: "Compiler"
   },
+  {
+    title: "Segra",
+    description: "A simple reward-based smart bin system that encourages users to recycle by providing incentives.",
+    techs: ["Python", "Django", "DaisyUI", "AI/ML"],
+    github: "https://github.com/harishtpj/SegraWeb",
+    live: "https://segra.pythonanywhere.com/",
+    category: ["Web Development", "Applications"],
+    icon: "Web"
+  }
 ];
 
 const categories = ["All", "Systems", "AI/ML", "Networking", "Compilers", "Enterprise", "Tools", "Applications", "Web Development", "Quantum Computing"];
@@ -231,7 +315,7 @@ export function Projects() {
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <FolderGit2 className="w-6 h-6 text-primary" />
+                    <DynamicIcon name={project.icon || "default"} className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex gap-2">
                     {project.github && (
@@ -254,6 +338,17 @@ export function Projects() {
                         aria-label={`View ${project.title} on GitLab`}
                       >
                         <Gitlab className="w-5 h-5 text-muted-foreground hover:text-foreground" />
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-lg hover:bg-muted transition-colors"
+                        aria-label={"View Live Demo"}
+                      >
+                        <ExternalLink className="w-5 h-5 text-muted-foreground hover:text-foreground" />
                       </a>
                     )}
                   </div>

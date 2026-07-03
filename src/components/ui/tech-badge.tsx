@@ -7,7 +7,11 @@ import {
   SiGithub, SiGnubash, SiVuedotjs, SiClojure, SiOctave, SiAdafruit, SiDelphi,
   SiDjango, SiRubyonrails, SiFlask, SiFastapi, SiRubysinatra, SiLighthouse,
   SiQiskit, SiNumpy, SiPandas, SiTidyverse, SiLaravel, SiTailwindcss,
-  SiDaisyui
+  SiDaisyui, SiPytorch, SiTensorflow,
+  SiKeras,
+  SiScikitlearn,
+  SiLangchain,
+  SiGooglegemini
 } from "react-icons/si";
 import { FaJava, FaMicrochip, FaCode, FaBrain, FaRProject, FaLanguage } from "react-icons/fa";
 import { DiProlog } from "react-icons/di";
@@ -15,6 +19,7 @@ import { GiProcessor } from "react-icons/gi";
 import { GrMicrofocus, GrVirtualMachine } from "react-icons/gr";
 import { MdCamera } from "react-icons/md";
 import { TbBrandCSharp } from "react-icons/tb";
+import { AiFillOpenAI } from "react-icons/ai";
 
 interface TechBadgeProps {
   name: string;
@@ -93,6 +98,13 @@ const techIcons: Record<string, { icon: React.ElementType; color: string }> = {
   "AI/ML": { icon: FaBrain, color: "#FF6F00" },
   "Computer Vision": { icon: MdCamera, color: "#5C6BC0" },
   "NLP": { icon: FaLanguage, color: "#00BFA5" },
+  "PyTorch": { icon: SiPytorch, color: "#EE4C2C" },
+  "Tensorflow": { icon: SiTensorflow, color: "#FF6F00" },
+  "Keras": { icon: SiKeras, color: "#D00000" },
+  "Scikit-learn": { icon: SiScikitlearn, color: "#F7931E" },
+  "Langchain": { icon: SiLangchain, color: "#09343B" },
+  "LLM": { icon: AiFillOpenAI, color: "#10A37F" },
+  "Gemini": { icon: SiGooglegemini, color: "#4285F4" },
 
   // Scientific
   "Qiskit": { icon: SiQiskit, color: "#A66EFF" },

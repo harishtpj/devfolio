@@ -4,6 +4,15 @@ import { Button } from "@/components/ui/button";
 
 const certifications = [
   {
+    name: "Junior Grade Typewriting English",
+    issuer: "Government of Tamil Nadu",
+  },
+  {
+    name: "Introduction to Programming with R",
+    issuer: "CS50 - Harvard University",
+    link: "https://certificates.cs50.io/1859cb67-cc59-4447-beb7-a1ef0d155cee.pdf?size=letter"
+  },
+  {
     name: "Cisco C++ Essentials",
     issuer: "Cisco Networking Academy",
     link: "https://www.credly.com/badges/15423c42-6b27-4fa9-a65f-c178af0a0f4b/"
@@ -42,13 +51,23 @@ const certifications = [
 
 const hackathons = [
   {
+    name: "MicroCraft - ArcNight Hackathon 2026",
+    desc: "A 24-hour flagship hackathon organized as part of MicroCraft 2026. Built Verifolium",
+    link: "" // TODO: Add link to certificate once released
+  },
+  {
+    name: "Agentic AI - The Future of Autonomous Agents",
+    desc: "Workshop conducted at VITC. Learned about AI agents and their applications.",
+    link: "https://harishtpj.github.io/docs/Certificate_AgenticAI.pdf"
+  },
+  {
     name: "DecodeX 2025",
     desc: "A competitive coding event held as part of TechnoVIT '25. Secured a spot in the Top 10.",
     link: "https://harishtpj.github.io/docs/Certificate_DecodeX.pdf"
   },
   {
     name: "Bit-n-Build Hackathon 2025",
-    desc: "A Statewide Hackathon conducted by FRCRCE in association with GDG",
+    desc: "A Statewide Hackathon conducted by FRCRCE in association with GDG. Built Risonanza",
     link: "https://unstop.com/certificate-preview/82d621d9-6978-4194-ac25-1178ab05cfcc",
   }
 ];
@@ -87,16 +106,17 @@ export function Certifications() {
                       <span className="text-sm text-muted-foreground">{cert.issuer}</span>
                     </div>
                   </div>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-8 w-8 opacity-60 group-hover:opacity-100 transition-opacity"
-                    asChild
-                  >
+                  {cert.link && 
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-8 w-8 opacity-60 group-hover:opacity-100 transition-opacity"
+                      asChild
+                    >
                     <a href={cert.link} target="_blank" rel="noopener noreferrer" title="View Certificate">
                       <ExternalLink className="h-4 w-4" />
                     </a>
-                  </Button>
+                  </Button>}
                 </div>
               </div>
             </ScrollAnimate>
@@ -124,16 +144,17 @@ export function Certifications() {
                       <span className="text-sm text-muted-foreground">{cert.desc}</span>
                     </div>
                   </div>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-8 w-8 opacity-60 group-hover:opacity-100 transition-opacity"
-                    asChild
-                  >
+                  {cert.link && 
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-8 w-8 opacity-60 group-hover:opacity-100 transition-opacity"
+                      asChild
+                    >
                     <a href={cert.link} target="_blank" rel="noopener noreferrer" title="View Certificate">
                       <ExternalLink className="h-4 w-4" />
                     </a>
-                  </Button>
+                  </Button>}
                 </div>
               </div>
             </ScrollAnimate>

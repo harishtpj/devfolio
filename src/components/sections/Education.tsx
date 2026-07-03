@@ -5,8 +5,8 @@ const education = [
   {
     degree: "B.Tech Computer Science & Engineering",
     institution: "Vellore Institute of Technology, Chennai",
-    period: "2025 - Present (First Year)",
-    highlight: "CGPA: 9.1/10",
+    period: "2025 - Present (Second Year)",
+    highlight: "CGPA: 9.49/10",
   },
   {
     degree: "CBSE Grade 12",

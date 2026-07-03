@@ -28,7 +28,7 @@ const techCategories = [
   },
   {
     title: "AI & Machine Learning",
-    techs: ["AI/ML", "Computer Vision", "NLP"],
+    techs: ["PyTorch", "Tensorflow", "Keras", "Scikit-learn", "Computer Vision", "NLP", "Langchain", "LLM"],
   },
   {
     title: "Tools & Platforms",

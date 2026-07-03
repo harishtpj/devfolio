@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Cpu,
     title: "Systems Expert",
-    description: "Built operating systems, compilers, and network servers from scratch",
+    description: "Built operating systems, DB engines, compilers, and network servers from scratch",
   },
   {
     icon: Globe,
@@ -48,7 +48,7 @@ export function About() {
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Currently pursuing <strong className="text-foreground">B.Tech in 
-                Computer Science & Engineering</strong> at VIT Chennai with a CGPA of <strong className="text-foreground">9.1</strong>. 
+                Computer Science & Engineering</strong> at VIT Chennai with a CGPA of <strong className="text-foreground">9.49</strong>. 
                 I'm deeply interested in <strong className="text-foreground">Quantum Computing</strong>, 
                 <strong className="text-foreground"> Artificial Intelligence</strong>, and 
                 pushing the boundaries of what's possible with code.
