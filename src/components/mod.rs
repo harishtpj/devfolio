@@ -1,0 +1,26 @@
+mod about;
+mod certifications;
+mod contact;
+mod education;
+// mod experience;
+mod footer;
+mod hero;
+mod navbar;
+mod projects;
+mod scroll_animate;
+mod shared;
+mod social_links;
+mod tech_stack;
+
+pub use about::About;
+pub use certifications::Certifications;
+pub use contact::Contact;
+pub use education::Education;
+// pub use experience::Experience;
+pub use footer::Footer;
+pub use hero::Hero;
+pub use navbar::Navbar;
+pub use projects::Projects;
+pub use scroll_animate::ScrollAnimate;
+pub use social_links::SocialLinks;
+pub use tech_stack::TechStack;

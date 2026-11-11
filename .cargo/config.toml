@@ -1,0 +1,5 @@
+[alias]
+dev = ["run", "--bin", "xtask", "--", "serve", "--open"]
+serve = ["run", "--bin", "xtask", "--", "serve"]
+build-site = ["run", "--bin", "xtask", "--", "build"]
+tailwind = ["run", "--bin", "xtask", "--", "tailwind"]
