@@ -1,8 +1,3 @@
 [tools]
 tailwindcss = "4.3.5"
 
-[[hooks]]
-stage = "pre_build"
-command = "tailwindcss"
-command_arguments = ["-i", "index.css", "-o", "style.css", "-m"]
-
