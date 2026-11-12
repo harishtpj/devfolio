@@ -1,3 +1,6 @@
+[tools]
+tailwindcss = "4.3.5"
+
 [[hooks]]
 stage = "pre_build"
 command = "tailwindcss"
